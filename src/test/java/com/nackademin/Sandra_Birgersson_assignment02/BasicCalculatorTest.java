@@ -69,8 +69,13 @@ public class BasicCalculatorTest {
 			assertEquals(bc.division(tempN1, tempN2),tempResult,0); 
 		}		
 	}
-	
-	//Wrong input testing
-	//int, float, string 
+	@Test
+	public void testDivisionBy0() {
+		double tempN1 = random.nextDouble();
+		double tempN2 = 0;
 
-}
+			LOG.info("Testing division with: " +tempN1 +" and: " +tempN2);
+			assertEquals(bc.division(tempN1, tempN2),0,0); 
+		}		
+	}
+
