@@ -12,8 +12,14 @@ public class BasicCalculator implements BasicOperations {
 		return firstNumber * secondNumber;
 	}	
 	public double division(double firstNumber, double secondNumber) {
-		return firstNumber / secondNumber;
+		
+		if (Double.isInfinite(firstNumber/secondNumber)) {
+			System.out.println("Division by 0");
+			return 0;
+		}
+		else {
+			return firstNumber / secondNumber;
 	}	//Gör felhantering för division by 0. 
-	//gör ev att alla return result: double... 
-
+	}
 }
+	

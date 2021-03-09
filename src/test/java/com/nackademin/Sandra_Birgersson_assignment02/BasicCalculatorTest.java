@@ -12,7 +12,7 @@ public class BasicCalculatorTest {
 	Random random = new Random(); 
 	public static final Logger LOG = Logger.getLogger(BasicCalculator.class.getName());
 	
-	//Happytesting
+	//Randomtesting
 	@Test
 	public void testAddition() {
 		double tempN1 = 0;
