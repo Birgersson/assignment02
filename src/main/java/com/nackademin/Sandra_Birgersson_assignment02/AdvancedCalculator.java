@@ -12,6 +12,10 @@ public class AdvancedCalculator extends BasicCalculator implements AdvancedOpera
 		return Math.abs(number)*-1;
 	}
 	public double max(double firstNumber, double secondNumber) {
+		if (firstNumber == secondNumber) {
+			System.out.println("Numbers are the same...");
+			return firstNumber;
+		} else
 		return Math.max(firstNumber, secondNumber);
 	}
 	public double circleArea(double radius) {
