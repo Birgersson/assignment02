@@ -13,6 +13,7 @@ public class BasicCalculator implements BasicOperations {
 	}	
 	public double division(double firstNumber, double secondNumber) {
 		return firstNumber / secondNumber;
-	}	
+	}	//Gör felhantering för division by 0. 
+	//gör ev att alla return result: double... 
 
 }
