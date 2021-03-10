@@ -13,13 +13,13 @@ public class BasicCalculator implements BasicOperations {
 	}	
 	public double division(double firstNumber, double secondNumber) {
 		
-		if (Double.isInfinite(firstNumber/secondNumber)) {
+		if (secondNumber==0) {
 			System.out.println("Division by 0");
-			return 0;
+			return Double.MAX_VALUE; //returning closes to infinity.... User should understand something is wrong here. 
 		}
 		else {
 			return firstNumber / secondNumber;
-	}	//Gör felhantering för division by 0. 
+	}	
 	}
 }
 	
