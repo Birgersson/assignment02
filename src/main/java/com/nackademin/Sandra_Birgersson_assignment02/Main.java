@@ -17,8 +17,7 @@ public class Main {
 		System.out.println("Negative gives result: "+aC.negative(123456));
 		System.out.println("Max gives result: "+aC.max(123456, 23456));
 		System.out.println("CircleArea gives result: "+aC.circleArea(56));
-	//	System.out.println("Addition gives result: "+aC.addition(2, 2));
-	//Why not access the basicCalulator like this? Good or bad practice? 
+
 	}
 
 }

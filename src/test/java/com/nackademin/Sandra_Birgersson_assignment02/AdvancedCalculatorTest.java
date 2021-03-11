@@ -11,7 +11,7 @@ public class AdvancedCalculatorTest {
 	Random random = new Random(); 
 	public static final Logger LOG = Logger.getLogger(AdvancedCalculator.class.getName());
 	
-	
+	//test square method with positive, negative randoms and 0
 	@Test
 	public void testSquare() {
 			double tempN = 0;
@@ -34,7 +34,7 @@ public class AdvancedCalculatorTest {
 			LOG.info("Testing square(0) with: " +tempN );
 			assertEquals(ac.square(tempN),tempResult,0); 
 	}
-
+	//test root method with positive, negative randoms and 0
 	@Test
 	public void testRoot() {
 			double tempN = 0;
@@ -57,6 +57,7 @@ public class AdvancedCalculatorTest {
 			LOG.info("Testing square root(0) with: " +tempN );
 			assertEquals(ac.root(tempN),tempResult,0); 
 	}
+	//test negative method with positive, negative randoms and 0
 	@Test
 	public void testNegative() {
 			double tempN = 0;
@@ -79,6 +80,7 @@ public class AdvancedCalculatorTest {
 			LOG.info("Testing negative(0) with: " +tempN );
 			assertEquals(ac.negative(tempN),tempResult,0); 
 	}
+	//test max method with positive, negative randoms and 0
 	@Test 
 	public void testMax() {
 			double tempN1 = 0;
@@ -107,7 +109,7 @@ public class AdvancedCalculatorTest {
 			LOG.info("Testing max(0) with: "  +tempN1 +" and " +tempN2  );
 			assertEquals(ac.max(tempN1,tempN2),tempN2,0);
 	}
-			
+	//test circle method with positive, negative randoms and 0		
 	@Test
 	public void testCircleArea() {
 			double r = 0;

@@ -12,7 +12,7 @@ public class BasicCalculatorTest {
 	Random random = new Random(); 
 	public static final Logger LOG = Logger.getLogger(BasicCalculator.class.getName());
 	
-	//testing with positive and negative doubles, and 0, using randoms
+	//testing addition with positive and negative randoms and 0
 	@Test
 	public void testAddition() {
 		double tempN1 = 0;
@@ -38,7 +38,7 @@ public class BasicCalculatorTest {
 			LOG.info("Testing addition(0) with: " +tempN1 +" and: " +tempN2);
 			assertEquals(bc.addition(tempN1, tempN2),tempN2,0); 
 	} 
-
+	//testing subtraction with positive and negative randoms and 0
 	@Test
 	public void testSubtraction() {
 		double tempN1 = 0;
@@ -64,6 +64,7 @@ public class BasicCalculatorTest {
 			LOG.info("Testing subtraction(0) with: " +tempN1 +" and: " +tempN2);
 			assertEquals(bc.addition(tempN1, tempN2),tempN2,0); 
 	}
+	//testing multiplication with positive and negative randoms and 0
 	@Test
 	public void testMultiplication() {
 		double tempN1 = 0;
@@ -89,6 +90,7 @@ public class BasicCalculatorTest {
 			LOG.info("Testing multiplication(0) with: " +tempN1 +" and: " +tempN2);
 			assertEquals(bc.multiplication(tempN1, tempN2),0,0); 
 	}
+	//testing division with positive and negative randoms and 0
 	@Test
 	public void testDivision() {
 		double tempN1 = 0;

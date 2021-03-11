@@ -15,7 +15,7 @@ public class BasicCalculator implements BasicOperations {
 		
 		if (secondNumber==0) {
 			System.out.println("Division by 0");
-			return Double.MAX_VALUE; //returning closes to infinity.... User should understand something is wrong here. 
+			return Double.MAX_VALUE; //returning double closest to infinity.... User should understand something is wrong here. 
 		}
 		else {
 			return firstNumber / secondNumber;
